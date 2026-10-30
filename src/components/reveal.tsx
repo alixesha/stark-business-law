@@ -9,7 +9,7 @@ interface RevealProps {
   from?: RevealDirection;
   /** Stagger delay in milliseconds. */
   delay?: number;
-  className?: string;
+  className?: string | undefined;
 }
 
 export function Reveal({ children, from = "right", delay = 0, className }: RevealProps) {
