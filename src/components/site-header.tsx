@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, Phone, X } from "lucide-react";
 import { FIRM, NAV_LINKS } from "@/lib/firm-data";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -28,7 +29,7 @@ export function SiteHeader() {
           <span className="leading-tight">
             <span className="block font-serif text-lg tracking-wide">Jerome D. Stark, PC</span>
             <span className="block text-[11px] uppercase tracking-[0.25em] text-gold/80">
-              Attorney at Law
+              Lawyer
             </span>
           </span>
         </Link>
@@ -38,11 +39,9 @@ export function SiteHeader() {
             <Link
               key={link.to}
               to={link.to}
-              className={({ isActive }) =>
-                `text-sm font-medium tracking-wide transition-colors hover:text-gold ${
-                  isActive ? "text-gold" : "text-background/85"
-                }`
-              }
+              className={`text-sm font-medium tracking-wide transition-colors hover:text-gold ${
+                pathname === link.to ? "text-gold" : "text-background/85"
+              }`}
             >
               {link.label}
             </Link>

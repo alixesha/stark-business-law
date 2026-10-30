@@ -14,7 +14,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Learn about Jerome D. Stark, PC — a Santa Ana law practice devoted to business litigation, commercial law, and corporate law. Call 714-558-8014.",
+          "Learn about Jerome D. Stark, PC — a Santa Ana law practice devoted to business litigation, commercial law, corporate law, real estate, and labour litigation. Call 714-558-8014.",
       },
       { property: "og:title", content: "About Jerome D. Stark, PC" },
       {
@@ -86,7 +86,8 @@ function About() {
             <div className="mt-5 h-px w-16 bg-gold" />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Jerome D. Stark, PC represents companies, business owners, and entrepreneurs in
-              business litigation, commercial law, and corporate law. The firm's clients range from
+              business litigation, commercial law, corporate law, real estate, and labour
+              litigation. The firm's clients range from
               closely held companies to established enterprises facing significant disputes or
               important transactions.
             </p>

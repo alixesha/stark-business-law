@@ -4,6 +4,8 @@ import { ArrowRight, Check, Phone } from "lucide-react";
 import litigationImage from "@/assets/business-litigation.jpg";
 import commercialImage from "@/assets/hero-law-office.jpg";
 import corporateImage from "@/assets/office-building.jpg";
+import realEstateImage from "@/assets/real-estate-law.jpg";
+import labourImage from "@/assets/labour-litigation-law.jpg";
 import { Reveal } from "@/components/reveal";
 import { FIRM, SERVICES } from "@/lib/firm-data";
 
@@ -17,7 +19,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Business litigation, commercial law, and corporate law services from Jerome D. Stark, PC in Santa Ana, California. Call 714-558-8014.",
+          "Business litigation, commercial law, corporate law, real estate law, and labour litigation services from Jerome D. Stark, PC in Santa Ana, California. Call 714-558-8014.",
       },
       { property: "og:title", content: "Practice Areas | Jerome D. Stark, PC" },
       {
@@ -36,12 +38,16 @@ const SERVICE_IMAGES: Record<string, string> = {
   "business-litigation": litigationImage,
   "commercial-law": commercialImage,
   "corporate-law": corporateImage,
+  "real-estate-law": realEstateImage,
+  "labour-litigation-law": labourImage,
 };
 
 const SERVICE_ALTS: Record<string, string> = {
   "business-litigation": "Business professionals signing a formal legal agreement",
   "commercial-law": "The firm's conference room with shelves of legal volumes",
   "corporate-law": "The firm's office building in Santa Ana, California",
+  "real-estate-law": "A modern commercial office building in California at golden hour",
+  "labour-litigation-law": "A serious negotiation between parties over a workplace dispute",
 };
 
 function Services() {
@@ -56,7 +62,7 @@ function Services() {
               Focused legal services for business
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-background/75 sm:text-lg">
-              Three core areas of law, handled with the same standard: practical advice, careful
+              Five core areas of law, handled with the same standard: practical advice, careful
               preparation, and personal attention.
             </p>
           </Reveal>

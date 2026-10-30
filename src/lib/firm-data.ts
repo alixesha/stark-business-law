@@ -1,8 +1,15 @@
-import { FileSignature, Landmark, Scale, type LucideIcon } from "lucide-react";
+import {
+  Building2,
+  FileSignature,
+  Gavel,
+  Landmark,
+  Scale,
+  type LucideIcon,
+} from "lucide-react";
 
 export const FIRM = {
   name: "Jerome D. Stark, PC",
-  tagline: "Attorney at Law",
+  tagline: "Lawyer",
   phoneDisplay: "714-558-8014",
   phoneHref: "tel:+17145588014",
   address: "540 N Golden Cir Dr #203, Santa Ana, CA 92705",
@@ -25,7 +32,12 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export interface Service {
-  slug: "business-litigation" | "commercial-law" | "corporate-law";
+  slug:
+    | "business-litigation"
+    | "commercial-law"
+    | "corporate-law"
+    | "real-estate-law"
+    | "labour-litigation-law";
   title: string;
   tagline: string;
   description: string;
@@ -78,5 +90,35 @@ export const SERVICES: Service[] = [
       "Ongoing general counsel for businesses",
     ],
     icon: Landmark,
+  },
+  {
+    slug: "real-estate-law",
+    title: "Real Estate Law",
+    tagline: "Clear title, solid deals, protected property interests",
+    description:
+      "Real estate decisions carry long-term consequences. The firm advises buyers, sellers, landlords, and investors on the agreements and disputes that shape their property interests — from purchase contracts through closing and beyond.",
+    items: [
+      "Purchase & sale agreements",
+      "Commercial & residential lease disputes",
+      "Property transactions & due diligence",
+      "Landlord-tenant matters",
+      "Boundary, easement & title issues",
+    ],
+    icon: Building2,
+  },
+  {
+    slug: "labour-litigation-law",
+    title: "Labour Litigation Law",
+    tagline: "Workplace disputes handled with firm advocacy",
+    description:
+      "Workplace conflicts can disrupt a business and its people. The firm represents employers and employees in labor disputes — from wrongful termination and wage claims to discrimination litigation — with a focus on practical, decisive resolution.",
+    items: [
+      "Wrongful termination claims",
+      "Wage & hour disputes",
+      "Employment contracts & agreements",
+      "Workplace discrimination & harassment claims",
+      "Defense and prosecution of labor proceedings",
+    ],
+    icon: Gavel,
   },
 ];

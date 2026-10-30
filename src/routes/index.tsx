@@ -23,13 +23,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Business litigation, commercial law, and corporate law attorney in Santa Ana, California. Jerome D. Stark, PC — call 714-558-8014 for a consultation.",
+          "Business litigation, commercial law, corporate law, real estate, and labour litigation lawyer in Santa Ana, California. Jerome D. Stark, PC — call 714-558-8014 for a consultation.",
       },
       { property: "og:title", content: "Jerome D. Stark, PC" },
       {
         property: "og:description",
         content:
-          "Business litigation, commercial law, and corporate law attorney in Santa Ana, California.",
+          "Business litigation, commercial law, corporate law, real estate, and labour litigation lawyer in Santa Ana, California.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -84,8 +84,8 @@ function Index() {
               <div className="mt-6 h-px w-20 bg-gold" />
               <p className="mt-6 max-w-xl text-base leading-relaxed text-background/80 sm:text-lg">
                 Jerome D. Stark, PC represents companies and business owners in business
-                litigation, commercial law, and corporate law &mdash; with personal attention from
-                your attorney at every step.
+                litigation, commercial law, corporate law, real estate, and labour litigation
+                &mdash; with personal attention from your attorney at every step.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <a
@@ -134,12 +134,12 @@ function Index() {
               Focused legal services for business
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Three core areas of law, handled with the same standard: practical advice, careful
+              Five core areas of law, handled with the same standard: practical advice, careful
               preparation, and personal attention.
             </p>
           </Reveal>
 
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
+          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((service, i) => (
               <Reveal key={service.slug} from="right" delay={i * 150}>
                 <article className="group flex h-full flex-col rounded-xl border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-steel/10">
