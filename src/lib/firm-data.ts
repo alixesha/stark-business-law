@@ -1,8 +1,15 @@
-import { FileSignature, Landmark, Scale, type LucideIcon } from "lucide-react";
+import {
+  Building2,
+  FileSignature,
+  Gavel,
+  Landmark,
+  Scale,
+  type LucideIcon,
+} from "lucide-react";
 
 export const FIRM = {
   name: "Jerome D. Stark, PC",
-  tagline: "Attorney at Law",
+  tagline: "Lawyer",
   phoneDisplay: "714-558-8014",
   phoneHref: "tel:+17145588014",
   address: "540 N Golden Cir Dr #203, Santa Ana, CA 92705",

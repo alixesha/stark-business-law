@@ -28,7 +28,7 @@ export function SiteHeader() {
           <span className="leading-tight">
             <span className="block font-serif text-lg tracking-wide">Jerome D. Stark, PC</span>
             <span className="block text-[11px] uppercase tracking-[0.25em] text-gold/80">
-              Attorney at Law
+              Lawyer
             </span>
           </span>
         </Link>
